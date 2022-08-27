@@ -1,3 +1,4 @@
+import { UsersService } from './users/users.service';
 import { UserController } from './users/user.controller';
 import { AdminController } from './admin.controller';
 import { CatsExampleController } from './cats.example/cats.example.controller';
@@ -13,6 +14,6 @@ import { AppService } from './app.service';
     UserController,
     AdminController,
   ],
-  providers: [AppService],
+  providers: [AppService, UsersService],
 })
 export class AppModule {}
